@@ -14,7 +14,7 @@ def index():
 
 @app.route("/add/<int:a>/<int:b>")
 def add(a, b):
-    return run2(a, b)
+    return str(run2(a, b))
 
 if __name__ == '__main__':
     import os
