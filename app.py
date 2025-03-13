@@ -12,6 +12,10 @@ def run2(a, b):
 def index():
     return run()
 
+@app.route("/add/<int:a>/<int:b>")
+def add(a, b):
+    return run2(a, b)
+
 if __name__ == '__main__':
     import os
     port = int(os.environ.get('PORT', 80))
